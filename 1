@@ -22,7 +22,7 @@ digit_0 = 0
 digit_1 = 1
 
 my_list = ['Python', 'C++', 'Javascript']
-list = ['Press 0', 'or 1', 'or 2', 'or 3']
+list = ['Input 0', 'or 1', 'or 2', 'or 3']
 
 print("argv val is output text file to create for text file\ninput 5 to write to text file")
 
@@ -39,18 +39,21 @@ while True:
 
     elif age == 1: 
         print("One")
-        while 'Press 0' in list:
+        while 'Input 0' in list:
             list.remove('Input 0')
+            print(list)
 
     elif age == 2:
         print("Two")
         while 'or 2' in list:
             list.remove('or 2')
+            print(list)
 
     elif age == 3:
         print("Three")
         while 'or 3' in list:
             list.remove('or 3')
+            print(list)
 
     elif age == 5:
         enter_function()
